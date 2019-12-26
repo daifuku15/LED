@@ -2,11 +2,11 @@
 #include <linux/fs.h>
 #include <linux/cdev.h>
 #include <linux/device.h>
-   #include <linux/uaccess.h>
-   #include <linux/io.h>
+#include <linux/uaccess.h>
+#include <linux/io.h>
   
-   MODULE_AUTHOR("Ryuichi Ueda");
-   MODULE_DESCRIPTION("driver for LED contorol");
+  MODULE_AUTHOR("Daiki Fukuchi");
+  MODULE_DESCRIPTION("driver for LED contorol");
   MODULE_LICENSE("GPL");
   MODULE_VERSION("0.1");
  
@@ -86,4 +86,3 @@
 
 
 
-22番24番
