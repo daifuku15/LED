@@ -1,23 +1,20 @@
-# Rasberry Pi でデバイスドライバを使用したGPIO操作によるLEDの点滅
-## LED点滅
-echo 0 > /dev/myled0 → LEDを消灯  
-echo 1 > /dev/myled0 → LEDを点灯  
-デモ　→　
+# Blink LED using device driver on Rasberry Pi  
+## Demo Video  
+https://youtu.be/ME4jk6MAx8A  
 ## Dependency  
 C  
 ## Setup  
-ハードウェア：Rasberry Pi 3 Model B V1.2  
-ソフトウェア：Raspbian　3.2.1  
+Hardware: Rasberry Pi 3 Model B V1.2  
+Software: Raspbian 3.2.1  
 ## Usage  
-Rasberry Piの2２番ピンと３９番ピンにLEDを接続  
-myled.c を　makefile でコンパイルする  
-sudo insmod myled.ko  
-sudo chmod 666 /dev/myled0  
-echo 0 > /dev/myled0 → LEDを消灯  
-echo 1 > /dev/myled0 → LEDを点灯  
-*<終了時のみ>  
-sudo rm /dev/myled0  
-sudo rmmod myled  
+Connect LEDs to pins 22 and 39 on the Rasberry Pi  
+Compile myled.c with Makefile  
+
+    sudo insmod myled.ko  
+    sudo chmod 666 / dev / myled0  
+    echo 0> / dev / myled0 → Turn off LED  
+    echo 1> / dev / myled0 → Turn on LED  
+
 ## License  
 This software is released under the MIT License, see LICENSE.  
 ## References  
