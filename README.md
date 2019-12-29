@@ -12,7 +12,7 @@ Compile myled.c with Makefile
 
     sudo insmod myled.ko  
     sudo chmod 666 / dev / myled0  
-    echo 0> / dev / myled0  T//urn off LED  
+    echo 0> / dev / myled0  //Turn off LED  
     echo 1> / dev / myled0  //Turn on LED  
 
 ## License  
