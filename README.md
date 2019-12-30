@@ -16,6 +16,6 @@ Compile myled.c with Makefile
     echo 1> / dev / myled0  //Turn on LED  
 
 ## License  
-This software is released under the MIT License, see LICENSE.  
+This software is released under the GNU GENERAL PUBLIC LICENSE, see LICENSE.  
 ## References  
 https://github.com/ryuichiueda/robosys2019.git
